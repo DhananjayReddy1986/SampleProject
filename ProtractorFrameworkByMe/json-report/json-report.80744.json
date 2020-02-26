@@ -1,0 +1,106 @@
+[
+  {
+    "description": "    In order to perform successful login\n    As a user\n    I want to enter correct username and password",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 2,
+    "id": "login",
+    "tags": [
+      {
+        "name": "@Login",
+        "line": 1
+      }
+    ],
+    "uri": "features\\login.feature",
+    "elements": [
+      {
+        "id": "login;verify-login-into-application",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "verify login into application",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User launches \"http://juliemr.github.io/protractor-demo/\"",
+            "match": {
+              "location": "step-definitions\\login-stepdef.js:11"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5013000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._time.default.setTimeout [as _onTimeout] (D:\\ProtractorFrameworkByMe\\node_modules\\cucumber\\lib\\user_code_runner.js:76:18)\n    at ontimeout (timers.js:436:11)\n    at tryOnTimeout (timers.js:300:5)\n    at listOnTimeout (timers.js:263:5)\n    at Timer.processTimers (timers.js:223:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User enters first number as \"1\"",
+            "match": {
+              "location": "step-definitions\\login-stepdef.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enters second number as \"2\"",
+            "match": {
+              "location": "step-definitions\\login-stepdef.js:24"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User clicks go button",
+            "match": {
+              "location": "step-definitions\\login-stepdef.js:29"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "result should be \"3\"",
+            "match": {
+              "location": "step-definitions\\login-stepdef.js:33"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

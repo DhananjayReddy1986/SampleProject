@@ -1,0 +1,6 @@
+target/
+*.css
+html-report/
+json-report/
+node_modules/
+test-execution-logs/
